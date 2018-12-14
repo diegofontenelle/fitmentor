@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,800');
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	font-family: 'Exo 2', sans-serif;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  background-color: #7159C1;
+}
+
+.main-title {
+  font-size: 64px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.flex-row {
+  display: flex;
+  flex: 2;
+  padding: 0 16px;
+}
+
+.flex-col { 
+  flex-direction: column; 
+  flex: 1;
+  margin-right: 16px;
+}
+
+.col-title {
+  padding: 16px 0;
+  font-size: 24px;
+  text-align: center;
+  color: #444;
+}
+
+.col-text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.text-purple { color: #7155c4; }
+
+.text-link {
+  color: #fff;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.sections {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.main-info { 
+  color: #fff;
+  font-size: 1.8rem; 
+}
+
+.sub-info {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 8px;
+}
+
+.btn-cta {
+  padding: 12px 24px;
+  background-color: #ffd357;
+  color: #b67c4d;
+  margin-top: 8px;
+  font-size: 24px;
+  font-weight: 300;
+  border: 0;
+  border-bottom: 3px;
+  border-style: solid;
+  border-color: #e4b445;
+  height: 55px;
+  width: 152px;
+  text-decoration: none;
+}
+
+.content-end {
+  display: flex; 
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  padding: 8px 16px;
+  color: #fff;
+}
+
+.bg-white { background: #f9f7f7 }
+
+.text-promo {
+  color: #ffd44a;
+  margin-top: 16px;
+}
+
+@media only screen and (max-width: 720px) {
+  .hidden-mobile {
+    display: none;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
+
+}
