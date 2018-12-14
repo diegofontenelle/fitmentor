@@ -137,6 +137,10 @@ body {
   margin-top: 16px;
 }
 
+.img-container {
+  margin-bottom: -5px;
+}
+
 @media only screen and (max-width: 720px) {
   .hidden-mobile {
     display: none;
@@ -144,6 +148,10 @@ body {
 
   .flex-row {
     flex-direction: column;
+  }
+
+  .img-container {
+    margin-bottom: 16px;
   }
 
 }
