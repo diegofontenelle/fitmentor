@@ -232,3 +232,37 @@ body {
   }
 
 }
+
+@media only screen and (min-width: 1024px) {
+  .intro-desktop {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .text-promo {
+    margin-top: -10%;
+  }
+
+  .offer-list { margin-left: auto }
+  .offer-list-desktop { margin-left: 20% }
+
+  .btn-cta { width: 300px }
+
+  .oferta {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .no-shadow-desktop {
+    box-shadow: none;
+  }
+
+  .fix-desktop {
+    margin-left: 20%;
+    margin-bottom: 32px; 
+  }
+}
