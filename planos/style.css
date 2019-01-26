@@ -254,9 +254,28 @@ html, body {
 
 .text-black { color: #504d4d !important;  }
 
+.col-container {
+    flex-direction: column;
+}
+
+.title-bold {
+    font-size: 17px !important;
+    font-weight: bold;
+    text-align: left;
+}
+
+.light-text {
+    font-size: 17px !important;
+    color: #797979 !important;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+
 @media only screen and (max-width: 1023px) {
     .cards-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .garantia-container .juros,
