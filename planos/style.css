@@ -271,6 +271,20 @@ html, body {
     text-align: left;
 }
 
+footer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 32px 48px;
+    align-items: center;
+    background: rgb(69, 55, 99);
+}
+
+footer ul > li > a {
+    color: #fff;
+    text-decoration: none;
+}
 
 @media only screen and (max-width: 1023px) {
     .cards-container {
