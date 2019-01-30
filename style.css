@@ -260,7 +260,6 @@ html, body {
 
 .col-container {
     flex-direction: column;
-    flex: 1;
 }
 
 .title-bold {

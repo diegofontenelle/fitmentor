@@ -36,6 +36,10 @@ h1,h2,h3 {
     background-image: url(../static/bgshapesblue.jpg);
 }
 
+.bg-intro {
+    background-image: url(../static/bg\ -mountain.jpg);
+}
+
 ul { list-style: none; }
 
 .check-list {
@@ -87,7 +91,7 @@ html, body {
     padding: 0px 48px;
     align-items: center;
     box-shadow: 1px 1px 5px rgba(0,0,0,.1)!important;
-    height: 0;
+    height: 60px;
 }
 
 .nav > img { height: 30px; }
@@ -256,6 +260,7 @@ html, body {
 
 .col-container {
     flex-direction: column;
+    flex: 1;
 }
 
 .title-bold {
@@ -286,11 +291,71 @@ footer ul > li > a {
     text-decoration: none;
 }
 
+.col {
+    padding: 0 48px;
+    flex: 1;
+  }
+
+.bg-fluxograma {
+    background-image: url(../static/Transparente.png);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.headline { 
+    font-size: 38px !important;
+    text-align: left !important;
+    color: #404041;
+    line-height: 1 !important;
+    padding: 0 !important;
+}
+
+.sub-head {
+    font-size: 18px !important;
+    margin-top: 16px;
+    font-weight: 400;
+    text-align: left !important;
+    line-height: 1.5 !important;
+}
+
+.btn-cta {
+    border: none;
+    background: rgb(119,113,227);
+    background: linear-gradient(90deg, rgba(119,113,227,1) 40%, rgba(93,86,207,1) 66%);
+    color: #fff;
+    margin-top: 48px;
+    width: 200px;
+    display: block;
+    padding: 16px;
+    border-radius: 10px;
+    margin: 16px 0;
+    text-decoration: none;
+    box-shadow: 0 15px 15px -15px rgba(0,0,0,.25);
+    font-size: 18px;
+    transition: all .5s;
+    text-align: center;
+}
+
+.app-modal-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    min-height: 100vh;
+    padding: 0 .75em;
+    padding-top: 15%;
+    max-width: 100%;
+}
+
 @media only screen and (max-width: 1023px) {
     .cards-container {
         flex-direction: column;
         align-items: center;
     }
+
+    .bg-fluxograma { display: none; }
 
     .garantia-container .juros,
     .garantia-container p {
@@ -301,5 +366,17 @@ footer ul > li > a {
         flex-direction: column;
         justify-content: space-evenly;
         height: 90px;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0;
+        width: 100%;
+      }
+    
+    .app-modal-info {
+        flex-direction: row;
+        align-items: flex-start;
     }
 }
