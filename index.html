@@ -150,6 +150,7 @@
                             <li><i class="fa fa-check"></i>Objetivos até a próxima avaliação</li>
                             <li><i class="fa fa-check"></i>Página personalizada para o Personal, com uma mensagem de
                                 boas vindas, formas de contato e rede social</li>
+                            <li id="btn-video-app" class="btn-border"><i class="fa fa-video"></i>Veja Como</li>
                         </ul>
                     </div>
                 </div>
@@ -292,6 +293,29 @@
             </ul>
         </div>
     </footer>
+
+    <div id="modal-video" style="display:none; text-align: center; position: fixed; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.7);">
+        <video id="videoApp" width="228" height="556" controls muted>
+            <source src="static/app480p.mp4" type="video/mp4">
+        </video>
+        <i id="close-modal-video" class="fa fa-2x fa-times" style="position: fixed; color: #fff; right: 15px; top: 15px;"></i>
+    </div>
+    <script>
+        var btnApp = document.getElementById("btn-video-app");
+        var modalVideo = document.getElementById("modal-video");
+        var closeModalVideo = document.getElementById("close-modal-video");
+        var videoApp = document.getElementById("videoApp");
+
+        btnApp.addEventListener('click', () => {
+            modalVideo.style.display = "block";
+            videoApp.play();
+        });
+
+        closeModalVideo.addEventListener('click', () => {
+            modalVideo.style.display = 'none';
+        });
+
+    </script>
 </body>
 
 </html>
