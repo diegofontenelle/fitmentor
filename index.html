@@ -27,10 +27,8 @@
             </nav>
             <div class="app-modal-info">
                 <div class="col">
-                    <p class="headline">Aumente as vendas do seu negócio físico ou online com autoridade,
-                        reconhecimento e tecnologia.</p>
-                    <p class="sub-head">No FitMentor você encontra todos os recursos necessários para construir a sua
-                        estratégia do zero, seja ela presencial ou via consultoria online.</p>
+                    <p class="headline">A solução perfeita para o Personal Trainer que quer chegar no próximo nível!</p>
+                    <p class="sub-head">No FitMentor você encontra tudo que precisa para construir treinos incríveis, avaliações completas e acompanhar a evolução do seu aluno.</p>
                     <div style="display: flex">
                         <a href="#planos" class="btn-cta" style="margin-right: 16px;">
                             Experimente Agora
@@ -42,6 +40,29 @@
                     </div>
                 </div>
                 <div class="col bg-fluxograma">
+                </div>
+            </div>
+        </div>
+
+        <div class="div-content">
+            <div class="intro-container" style="padding: 0 5%">
+                <h1>Simples, Fácil e Poderoso</h1>
+                <p>Nosso compromisso é fazer a vida do Personal Trainer muito mais fácil</p>
+            </div>
+
+            <div class="tabs-container" style="padding: 0 5%">
+                <ul class="tabs">
+                    <li class="tab active"><a onclick="showTab('importar', this)">Importar Treino</a></li>
+                    <li class="tab"><a onclick="showTab('montar', this)">Montar Treino</a></li>
+                    <li class="tab"><a onclick="showVideo()">App do aluno</a></li>
+                </ul>
+                <div id="importar" class="tab-content active">
+                    <p class="light-text">Reutilize fichas de treinamento para outros alunos com passos simples</p>
+                    <img src="static/importar treino.gif" />
+                </div>
+                <div id="montar" class="tab-content">
+                    <p class="light-text">Crie seu treino em menos de 5 minutos!</p>
+                    <img src="static/Montar treino.gif" alt="">
                 </div>
             </div>
         </div>
@@ -315,6 +336,24 @@
             modalVideo.style.display = 'none';
         });
 
+        const showVideo = () => {
+            modalVideo.style.display = "block";
+            videoApp.play();
+        }
+
+        const showTab = (tabName, clicked) => {
+            const activeClass = 'active';
+            const tabToShow = document.getElementById(tabName);
+            const tabClicked = clicked.parentElement;
+            const activeTab = document.getElementsByClassName('tab active')[0];
+            const activeTabContent = document.getElementsByClassName('tab-content active')[0]; // there can only be one!
+            console.log(tabClicked);
+
+            activeTab.classList.remove(activeClass);
+            tabClicked.classList.add(activeClass);
+            activeTabContent.classList.remove(activeClass);
+            tabToShow.classList.add(activeClass);
+        }
     </script>
 </body>
 
