@@ -348,36 +348,10 @@ footer ul > li > a {
     max-width: 100%;
 }
 
-@media only screen and (max-width: 1023px) {
-    .cards-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .bg-fluxograma { display: none; }
-
-    .garantia-container .juros,
-    .garantia-container p {
-        color: #fff;
-    }
-
-    .nav {
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 90px;
-    }
-
-    .col {
-        display: flex;
-        flex-direction: column;
-        padding: 0 0;
-        width: 100%;
-      }
-    
-    .app-modal-info {
-        flex-direction: row;
-        align-items: flex-start;
-    }
+.content-gifs {
+    min-height: 80vh !important;
+    box-shadow: 0 0 2px #ccc;
+    z-index: 0 !important;
 }
 
 #btn-video-app,
@@ -426,4 +400,42 @@ li.tab {
 
 li.tab.active {
     border-bottom: 3px solid #3F51B5;
+}
+
+@media only screen and (max-width: 1023px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bg-fluxograma { display: none; }
+
+    .garantia-container .juros,
+    .garantia-container p {
+        color: #fff;
+    }
+
+    .nav {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 90px;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0;
+        width: 100%;
+      }
+    
+    .app-modal-info {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .content-gifs {
+        min-height: 100vh !important;
+        box-shadow: 0 0 2px #ccc;
+        z-index: 0 !important;
+    }
 }
