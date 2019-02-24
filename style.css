@@ -224,6 +224,11 @@ html, body {
     font-weight: 300;
 }
 
+.card-content > .text-riscado {
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
 .intro-container {
     padding: 48px 0;
     text-align: center;
