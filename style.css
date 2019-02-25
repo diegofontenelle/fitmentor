@@ -235,7 +235,7 @@ html, body {
 }
 
 .intro-container h1 {
-    font-size: 40px;
+    font-size: 36px;
     padding: 8px 0;
 }
 
@@ -309,7 +309,7 @@ footer ul > li > a {
 }
 
 .headline { 
-    font-size: 38px !important;
+    font-size: 32px !important;
     text-align: left !important;
     color: #404041;
     line-height: 1 !important;
@@ -329,15 +329,14 @@ footer ul > li > a {
     background: rgb(119,113,227);
     background: linear-gradient(90deg, rgba(119,113,227,1) 40%, rgba(93,86,207,1) 66%);
     color: #fff;
-    margin-top: 48px;
     width: 200px;
     display: block;
     padding: 16px;
     border-radius: 10px;
-    margin: 16px 0;
+    margin: 4px 0;
     text-decoration: none;
     box-shadow: 0 15px 15px -15px rgba(0,0,0,.25);
-    font-size: 18px;
+    font-size: 20px;
     transition: all .5s;
     text-align: center;
 }
@@ -351,6 +350,12 @@ footer ul > li > a {
     padding: 0 .75em;
     padding-top: 15%;
     max-width: 100%;
+}
+
+#videoApp {
+    width: 60%;
+    height: 100%;
+    margin-top: -20%;
 }
 
 .content-gifs {
@@ -376,19 +381,20 @@ footer ul > li > a {
     flex: 1;
     width: 100%;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
 .tabs {
     display: flex;
-    margin-bottom: 48px;
+    margin-bottom: 16px;
+    margin-left: 5%;
 }
 
 .tab-content {
     display: none;
-    padding: 0 5%;
+    padding: 5%;
     max-width: 100%;
+    text-align: center;
 }
 
 .tab-content img { max-width: 100%; }
@@ -407,11 +413,27 @@ li.tab.active {
     border-bottom: 3px solid #3F51B5;
 }
 
+.btn-mobile {
+    display: none;
+    justify-content: center;
+}
+
+.btn-desktop { display: flex; }
+
 @media only screen and (max-width: 1023px) {
     .cards-container {
         flex-direction: column;
         align-items: center;
     }
+
+    #videoApp {
+        width: 300px;
+        height: 420px;
+        margin-top: 0;
+    }
+
+    .btn-mobile { display: flex; }
+    .btn-desktop { display: none; }
 
     .bg-fluxograma { display: none; }
 
@@ -423,7 +445,7 @@ li.tab.active {
     .nav {
         flex-direction: column;
         justify-content: space-evenly;
-        height: 90px;
+        /* height: 90px; */
     }
 
     .col {
@@ -434,13 +456,18 @@ li.tab.active {
       }
     
     .app-modal-info {
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-start;
+        padding-top: 5%;
     }
 
     .content-gifs {
         min-height: 100vh !important;
         box-shadow: 0 0 2px #ccc;
         z-index: 0 !important;
+    }
+
+    .nav > ul {
+        display: none;
     }
 }

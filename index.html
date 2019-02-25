@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="shortcut icon" href="../static/favicon.ico">
     <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
@@ -27,43 +27,64 @@
             </nav>
             <div class="app-modal-info">
                 <div class="col">
-                    <p class="headline">A solução perfeita para o Personal Trainer que quer chegar no próximo nível!</p>
-                    <p class="sub-head">No FitMentor você encontra tudo que precisa para construir treinos incríveis, avaliações completas e acompanhar a evolução do seu aluno.</p>
-                    <div style="display: flex">
+                    <p class="headline">Mude a forma como seus clientes enxergam você!</p>
+                    <p class="sub-head">Entregue seus treinos de uma forma inovadora que eles nunca viram antes!</p>
+                    <div class="btn-desktop">
                         <a href="#planos" class="btn-cta" style="margin-right: 16px;">
                             Experimente Agora
                         </a>
 
-                        <a href="#incluso" class="btn-cta" style="background: #fff; color: #7159C1; border: 2px solid #7159C1">
+                        <a href="#videos" class="btn-cta"
+                            style="background: #fff; color: #7159C1; border: 2px solid #7159C1">
                             Como funciona?
                         </a>
                     </div>
                 </div>
-                <div class="col bg-fluxograma">
+                <div class="col" style="margin-top: -48px">
+                    <div id="app" class="tab-content" style="display: block">
+                        <video id="videoApp" autoplay controls muted>
+                            <source src="static/app480p.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="btn-mobile">
+                        <a href="#planos" class="btn-cta" style="margin-right: 16px;">
+                            Experimente Agora
+                        </a>
+
+                        <a href="#videos" class="btn-cta"
+                            style="background: #fff; color: #7159C1; border: 2px solid #7159C1">
+                            Como funciona?
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="div-content content-gifs">
+        <div id="videos" class="div-content content-gifs">
             <div class="intro-container" style="padding: 48px 5%">
-                <h1>Simples, Fácil e Poderoso</h1>
-                <p>Nosso compromisso é fazer a vida do Personal Trainer muito mais fácil</p>
+                <h1>Prescreva treinos em menos de 5 minutos!</h1>
             </div>
 
-            <div class="tabs-container" style="padding: 0 5%">
+            <div class="tabs-container">
                 <ul class="tabs">
-                    <li class="tab active"><a onclick="showTab('importar', this)">Importar Treino</a></li>
-                    <li class="tab"><a onclick="showTab('montar', this)">Montar Treino</a></li>
-                    <li class="tab"><a onclick="showVideo()">App do aluno</a></li>
+                    <li class="tab active"><a onclick="showTab('montar', this)">Montar Treino</a></li>
+                    <li class="tab "><a onclick="showTab('importar', this)">Importar Treino</a></li>
                 </ul>
-                <div id="importar" class="tab-content active">
+                <div id="montar" class="tab-content active">
+                    <p class="light-text">Crie seu treino em menos de 5 minutos!</p>
+                    <!-- <img src="static/Montar treino.gif" alt=""> -->
+                    <video id="criarTreino" autoplay controls muted
+                        style="max-height: 500px; max-width: 100%;">
+                        <source src="static/criar_treino.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id="importar" class="tab-content">
                     <p class="light-text">Reutilize fichas de treinamento para outros alunos com passos simples</p>
                     <img src="static/importar treino.gif" />
                 </div>
-                <div id="montar" class="tab-content">
-                    <p class="light-text">Crie seu treino em menos de 5 minutos!</p>
-                    <img src="static/Montar treino.gif" alt="">
-                </div>
+                <a href="#planos" class="btn-cta" style="margin-right: 16px;">
+                    Experimente Agora
+                </a>
             </div>
         </div>
 
@@ -93,9 +114,10 @@
                     <div class="card-content">
                         <label class="text-info">12x de</label>
                         <p class="text-price main-color">R$ 87,57</p>
-                        <label class="text-riscado">De: 1198,80</label> <br/>
-                        <label class="trial-text">Por: 898,80</label> 
-                        <a href="https://pay.hotmart.com/U11456452G?off=gwb69xbs" class="cta linear">Experimente Agora!</a>
+                        <label class="text-riscado">De: 1198,80</label> <br />
+                        <label class="trial-text">Por: 898,80</label>
+                        <a href="https://pay.hotmart.com/U11456452G?off=gwb69xbs" class="cta linear">Experimente
+                            Agora!</a>
                         <label class="trial-text">* Garantia de 30 dias</label>
                     </div>
                 </div>
@@ -107,8 +129,8 @@
                     <div class="card-content">
                         <label class="text-info">6x de:</label>
                         <p class="text-price main-color">R$ 92,45</p>
-                        <label class="text-riscado">De: 599,40</label> <br/>
-                        <label class="trial-text">Por: 509,40</label> 
+                        <label class="text-riscado">De: 599,40</label> <br />
+                        <label class="trial-text">Por: 509,40</label>
                         <a href="https://pay.hotmart.com/U11456452G?off=jsnx5ich" class="cta">Experimente Agora!</a>
                         <label class="trial-text">* Garantia de 30 dias</label>
                     </div>
@@ -131,7 +153,8 @@
                         <h2>Avaliação</h2>
                         <ul class="check-list">
                             <li><i class="fa fa-check"></i>Anamnese Completa</li>
-                            <li><i class="fa fa-check"></i>Todos os prótocolos de medidas de avaliação antropométrica</li>
+                            <li><i class="fa fa-check"></i>Todos os prótocolos de medidas de avaliação antropométrica
+                            </li>
                             <li><i class="fa fa-check"></i>Teste de flexibilidade</li>
                             <li><i class="fa fa-check"></i>Teste de cardio</li>
                             <li><i class="fa fa-check"></i>Avaliação e medidas disponíveis direto no Aplicativo do
@@ -182,7 +205,8 @@
 
             <div class="garantia-container">
                 <p class="text-black">Precisa de mais?</p>
-                <a href="https://api.whatsapp.com/send?phone=5598991354878&text=Preciso de um plano especial" class="cta linear contato">Fale
+                <a href="https://api.whatsapp.com/send?phone=5598991354878&text=Preciso de um plano especial"
+                    class="cta linear contato">Fale
                     com nossa equipe</a>
             </div>
         </div>
@@ -281,7 +305,8 @@
                 <p class="text-black">Vamos conversar 😉</p>
                 <p class="light-text" style="text-align: center">Se você ainda tem alguma dúvida, ficaremos felizes em
                     falar com você!</p>
-                <a href="https://api.whatsapp.com/send?phone=5598991354878&text=Me ajuda" class="cta linear contato">Entrar
+                <a href="https://api.whatsapp.com/send?phone=5598991354878&text=Me ajuda"
+                    class="cta linear contato">Entrar
                     em contato</a>
             </div>
         </div>
@@ -318,17 +343,20 @@
         </div>
     </footer>
 
-    <div id="modal-video" style="display:none; text-align: center; position: fixed; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.7);">
+    <div id="modal-video"
+        style="display:none; text-align: center; position: fixed; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.7);">
         <video id="videoApp" width="228" height="556" controls muted>
             <source src="static/app480p.mp4" type="video/mp4">
         </video>
-        <i id="close-modal-video" class="fa fa-2x fa-times" style="position: fixed; color: #fff; right: 15px; top: 15px;"></i>
+        <i id="close-modal-video" class="fa fa-2x fa-times"
+            style="position: fixed; color: #fff; right: 15px; top: 15px;"></i>
     </div>
     <script>
         var btnApp = document.getElementById("btn-video-app");
         var modalVideo = document.getElementById("modal-video");
         var closeModalVideo = document.getElementById("close-modal-video");
         var videoApp = document.getElementById("videoApp");
+        var criarTreino = document.getElementById("criarTreino")
 
         btnApp.addEventListener('click', () => {
             modalVideo.style.display = "block";
@@ -350,13 +378,16 @@
             const tabClicked = clicked.parentElement;
             const activeTab = document.getElementsByClassName('tab active')[0];
             const activeTabContent = document.getElementsByClassName('tab-content active')[0]; // there can only be one!
-            console.log(tabClicked);
 
             activeTab.classList.remove(activeClass);
             tabClicked.classList.add(activeClass);
             activeTabContent.classList.remove(activeClass);
             tabToShow.classList.add(activeClass);
         }
+
+        criarTreino.addEventListener("fullscreenchange", function () {
+            screen.orientation.lock("landscape-primary");
+        });
     </script>
 </body>
 
