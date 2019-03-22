@@ -151,6 +151,7 @@ html, body {
 }
 
 .desconto-semestral::before { content: '-15%'; }
+.desconto-trimestral::before { content: '-10%'; }
 .desconto-anual::before { content: '-25%'; }
 
 .card-title::before {
