@@ -1,394 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link rel="shortcut icon" href="../static/favicon.ico">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="../static/favicon.ico" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>FitMentor - Planos</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="main-container">
-        <div class="div-content bg-intro">
-            <nav class="nav">
-                <img src="static/logowhite.png" alt="FitMentor" 0 />
-                <ul>
-                    <li><a href="https://fitmentor.com.br">Home</a></li>
-                    <li><a href="https://api.whatsapp.com/send?phone=5598991354878&text=Me ajuda">Suporte</a></li>
-                    <li class="nav-cta"><a href="#planos">Experimente Agora!</a></li>
-                </ul>
-            </nav>
-            <div class="app-modal-info">
-                <div class="col">
-                    <p class="headline">Mude a forma como seus clientes enxergam você!</p>
-                    <p class="sub-head">Entregue seus treinos de uma forma inovadora que eles nunca viram antes!</p>
-                    <div class="btn-desktop">
-                        <a href="#planos" class="btn-cta" style="margin-right: 16px;">
-                            Experimente Agora
-                        </a>
+      <div class="div-content bg-intro">
+        <nav class="nav">
+          <img src="static/logowhite.png" alt="FitMentor" 0 />
+          <ul>
+            <li><a href="https://fitmentor.com.br">Home</a></li>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=5598991354878&text=Me ajuda"
+                >Suporte</a
+              >
+            </li>
+            <li class="nav-cta"><a href="#planos">Experimente Agora!</a></li>
+          </ul>
+        </nav>
+        <div class="app-modal-info">
+          <div class="col">
+            <p class="headline">
+              Mude a forma como seus clientes enxergam você!
+            </p>
+            <p class="sub-head">
+              Entregue seus treinos de uma forma inovadora que eles nunca viram
+              antes!
+            </p>
+            <div class="btn-desktop">
+              <a href="#planos" class="btn-cta" style="margin-right: 16px;">
+                Experimente Agora
+              </a>
 
-                        <a href="#videos" class="btn-cta"
-                            style="background: #fff; color: #7159C1; border: 2px solid #7159C1">
-                            Como funciona?
-                        </a>
-                    </div>
-                </div>
-                <div class="col" style="margin-top: 8px">
-                    <div id="app" class="tab-content" style="display: block">
-                        <video id="videoApp" autoplay playsinline controls muted>
-                            <source src="static/app480p.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="btn-mobile">
-                        <a href="#planos" class="btn-cta" style="margin-right: 16px;">
-                            Experimente Agora
-                        </a>
-
-                        <a href="#videos" class="btn-cta"
-                            style="background: #fff; color: #7159C1; border: 2px solid #7159C1">
-                            Como funciona?
-                        </a>
-                    </div>
-                </div>
+              <a
+                href="#videos"
+                class="btn-cta"
+                style="background: #fff; color: #7159C1; border: 2px solid #7159C1"
+              >
+                Como funciona?
+              </a>
             </div>
+          </div>
+          <div class="col" style="margin-top: 8px">
+            <div id="app" class="tab-content" style="display: block">
+              <video id="videoApp" autoplay playsinline controls muted>
+                <source src="static/app480p.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="btn-mobile">
+              <a href="#planos" class="btn-cta" style="margin-right: 16px;">
+                Experimente Agora
+              </a>
+
+              <a
+                href="#videos"
+                class="btn-cta"
+                style="background: #fff; color: #7159C1; border: 2px solid #7159C1"
+              >
+                Como funciona?
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="videos" class="div-content content-gifs">
+        <div class="intro-container" style="padding: 48px 5%">
+          <h1>Prescreva treinos em menos de 5 minutos!</h1>
         </div>
 
-        <div id="videos" class="div-content content-gifs">
-            <div class="intro-container" style="padding: 48px 5%">
-                <h1>Prescreva treinos em menos de 5 minutos!</h1>
-            </div>
+        <div class="tabs-container">
+          <ul class="tabs">
+            <li class="tab active">
+              <a onclick="showTab('montar', this)">Montar Treino</a>
+            </li>
+            <li class="tab ">
+              <a onclick="showTab('importar', this)">Importar Treino</a>
+            </li>
+          </ul>
+          <div id="montar" class="tab-content active">
+            <p class="light-text">Crie seu treino em menos de 5 minutos!</p>
+            <!-- <img src="static/Montar treino.gif" alt=""> -->
+            <video
+              id="criarTreino"
+              autoplay
+              playsinline
+              controls
+              muted
+              style="max-height: 500px; max-width: 100%;"
+            >
+              <source src="static/criar_treino.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div id="importar" class="tab-content">
+            <p class="light-text">
+              Reutilize fichas de treinamento para outros alunos com passos
+              simples
+            </p>
+            <img src="static/importar treino.gif" />
+          </div>
+          <a href="#planos" class="btn-cta" style="margin-right: 16px;">
+            Experimente Agora
+          </a>
+        </div>
+      </div>
 
-            <div class="tabs-container">
-                <ul class="tabs">
-                    <li class="tab active"><a onclick="showTab('montar', this)">Montar Treino</a></li>
-                    <li class="tab "><a onclick="showTab('importar', this)">Importar Treino</a></li>
-                </ul>
-                <div id="montar" class="tab-content active">
-                    <p class="light-text">Crie seu treino em menos de 5 minutos!</p>
-                    <!-- <img src="static/Montar treino.gif" alt=""> -->
-                    <video id="criarTreino" autoplay playsinline controls muted
-                        style="max-height: 500px; max-width: 100%;">
-                        <source src="static/criar_treino.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div id="importar" class="tab-content">
-                    <p class="light-text">Reutilize fichas de treinamento para outros alunos com passos simples</p>
-                    <img src="static/importar treino.gif" />
-                </div>
-                <a href="#planos" class="btn-cta" style="margin-right: 16px;">
-                    Experimente Agora
-                </a>
+      <div class="div-content bg-forms">
+        <div id="planos" class="intro-container">
+          <h1>Planos</h1>
+          <p>Compare, escolha e comece!</p>
+        </div>
+        <div class="cards-container center-flex-content">
+          <div class="card">
+            <div class="card-title">
+              MENSAL
             </div>
+            <div class="card-content">
+              <label class="text-info">Por mês:</label>
+              <p class="text-price">R$ 99,90</p>
+              <a
+                href="https://pay.hotmart.com/M12533158H?off=mt06tc43"
+                class="cta"
+                >Experimente Agora!</a
+              >
+              <label class="trial-text">* Garantia de 30 dias</label>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title desconto-anual">
+              ANUAL
+              <p>mais econômico</p>
+            </div>
+            <div class="card-content">
+              <label class="text-info">12x de</label>
+              <p class="text-price main-color">R$ 74,90</p>
+              <label class="text-riscado">De: 1198,80</label> <br />
+              <label class="trial-text">Por: 898,80</label>
+              <a
+                href="https://pay.hotmart.com/M12533158H?off=cpm92sgp"
+                class="cta linear"
+                >Experimente Agora!</a
+              >
+              <label class="trial-text">* Garantia de 30 dias</label>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title desconto-trimestral">
+              TRIMESTRAL
+            </div>
+            <div class="card-content">
+              <label class="text-info">3x de:</label>
+              <p class="text-price main-color">R$ 89,90</p>
+              <label class="text-riscado">De: 299,70</label> <br />
+              <label class="trial-text">Por: 269,70</label>
+              <a
+                href="https://pay.hotmart.com/M12533158H?off=3ojfp9jw"
+                class="cta"
+                >Experimente Agora!</a
+              >
+              <label class="trial-text">* Garantia de 30 dias</label>
+            </div>
+          </div>
         </div>
 
-        <div class="div-content bg-forms">
-            <div id="planos" class="intro-container">
-                <h1>Planos</h1>
-                <p>Compare, escolha e comece!</p>
-            </div>
-            <div class="cards-container center-flex-content">
-                <div class="card">
-                    <div class="card-title">
-                        MENSAL
-                    </div>
-                    <div class="card-content">
-                        <label class="text-info">Por mês:</label>
-                        <p class="text-price">R$ 99,90</p>
-                        <a href="https://pay.hotmart.com/M12533158H?off=mt06tc43" class="cta">Experimente Agora!</a>
-                        <label class="trial-text">* Garantia de 30 dias</label>
-                    </div>
-                </div>
+        <div class="garantia-container">
+          <p><label>30</label> dias de garantia em todos os planos</p>
+          <p class="juros">*2.49 de juros ao mês em parcelamento no Hotmart</p>
+        </div>
+      </div>
 
-                <div class="card">
-                    <div class="card-title desconto-anual">
-                        ANUAL
-                        <p>mais econômico</p>
-                    </div>
-                    <div class="card-content">
-                        <label class="text-info">12x de</label>
-                        <p class="text-price main-color">R$ 74,90</p>
-                        <label class="text-riscado">De: 1198,80</label> <br />
-                        <label class="trial-text">Por: 898,80</label>
-                        <a href="https://pay.hotmart.com/M12533158H?off=cpm92sgp" class="cta linear">Experimente
-                            Agora!</a>
-                        <label class="trial-text">* Garantia de 30 dias</label>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-title desconto-trimestral">
-                        TRIMESTRAL
-                    </div>
-                    <div class="card-content">
-                        <label class="text-info">3x de:</label>
-                        <p class="text-price main-color">R$ 89,90</p>
-                        <label class="text-riscado">De: 299,70</label> <br />
-                        <label class="trial-text">Por: 179.80</label>
-                        <a href="https://pay.hotmart.com/M12533158H?off=3ojfp9jw" class="cta">Experimente Agora!</a>
-                        <label class="trial-text">* Garantia de 30 dias</label>
-                    </div>
-                </div>
+      <div id="incluso" class="div-content">
+        <div class="intro-container">
+          <h1>Incluso em todos os planos</h1>
+        </div>
+        <div class="cards-container">
+          <div class="card">
+            <div class="card-content">
+              <h2>Avaliação</h2>
+              <ul class="check-list">
+                <li><i class="fa fa-check"></i>Anamnese Completa</li>
+                <li>
+                  <i class="fa fa-check"></i>Todos os prótocolos de medidas de
+                  avaliação antropométrica
+                </li>
+                <li><i class="fa fa-check"></i>Teste de flexibilidade</li>
+                <li><i class="fa fa-check"></i>Teste de cardio</li>
+                <li>
+                  <i class="fa fa-check"></i>Avaliação e medidas disponíveis
+                  direto no Aplicativo do aluno
+                </li>
+              </ul>
             </div>
-
-            <div class="garantia-container">
-                <p><label>30</label> dias de garantia em todos os planos</p>
-                <p class="juros">*2.49 de juros ao mês em parcelamento no Hotmart</p>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h2>Exercícios</h2>
+              <ul class="check-list">
+                <li>
+                  <i class="fa fa-check"></i>Mais de 160 exercícios para você
+                  usar nos treinos
+                </li>
+                <li>
+                  <i class="fa fa-check"></i>Fotos e Vídeos de cada exercício.
+                  Nossas imagens são profissionais, nada de imagens da internet
+                </li>
+                <li>
+                  <i class="fa fa-check"></i>Novos exercícios adicionados
+                  periodicamente
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h2>Prescrição de Treinos</h2>
+              <ul class="check-list">
+                <li>
+                  <i class="fa fa-check"></i>Mais de 160 exercícios cadastrados
+                  com fotos e vídeos profissionais.
+                </li>
+                <li>
+                  <i class="fa fa-check"></i>Reutilize fichas de treinamento
+                  para outros alunos com passos simples
+                </li>
+                <li>
+                  <i class="fa fa-check"></i>Acompanhe o volume e intensidade
+                  das suas periodizações
+                </li>
+                <li>
+                  <i class="fa fa-check"></i>Use nossos modelos prontos ou crie
+                  o seu próprio
+                </li>
+                <li>
+                  <i class="fa fa-check"></i>Visualize os dias que seu aluno
+                  treinou e os feedbacks de cada treino
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h2>Aplicativo</h2>
+              <ul class="check-list">
+                <li><i class="fa fa-check"></i>Treino direto no aplicativo</li>
+                <li><i class="fa fa-check"></i>Avaliação e Medidas</li>
+                <li>
+                  <i class="fa fa-check"></i>Objetivos até a próxima avaliação
+                </li>
+                <li>
+                  <i class="fa fa-check"></i>Página personalizada para o
+                  Personal, com uma mensagem de boas vindas, formas de contato e
+                  rede social
+                </li>
+                <li id="btn-video-app" class="btn-border">
+                  <i class="fa fa-video"></i>Veja Como
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div id="incluso" class="div-content">
-            <div class="intro-container">
-                <h1>Incluso em todos os planos</h1>
-            </div>
-            <div class="cards-container">
-                <div class="card">
-                    <div class="card-content">
-                        <h2>Avaliação</h2>
-                        <ul class="check-list">
-                            <li><i class="fa fa-check"></i>Anamnese Completa</li>
-                            <li><i class="fa fa-check"></i>Todos os prótocolos de medidas de avaliação antropométrica
-                            </li>
-                            <li><i class="fa fa-check"></i>Teste de flexibilidade</li>
-                            <li><i class="fa fa-check"></i>Teste de cardio</li>
-                            <li><i class="fa fa-check"></i>Avaliação e medidas disponíveis direto no Aplicativo do
-                                aluno</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h2>Exercícios</h2>
-                        <ul class="check-list">
-                            <li><i class="fa fa-check"></i>Mais de 160 exercícios para você usar nos treinos</li>
-                            <li><i class="fa fa-check"></i>Fotos e Vídeos de cada exercício. Nossas imagens são
-                                profissionais, nada de imagens da internet</li>
-                            <li><i class="fa fa-check"></i>Novos exercícios adicionados periodicamente</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h2>Prescrição de Treinos</h2>
-                        <ul class="check-list">
-                            <li><i class="fa fa-check"></i>Mais de 160 exercícios cadastrados com fotos e vídeos
-                                profissionais.</li>
-                            <li><i class="fa fa-check"></i>Reutilize fichas de treinamento para outros alunos com
-                                passos simples</li>
-                            <li><i class="fa fa-check"></i>Acompanhe o volume e intensidade das suas periodizações</li>
-                            <li><i class="fa fa-check"></i>Use nossos modelos prontos ou crie o seu próprio</li>
-                            <li><i class="fa fa-check"></i>Visualize os dias que seu aluno treinou e os feedbacks de
-                                cada treino</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h2>Aplicativo</h2>
-                        <ul class="check-list">
-                            <li><i class="fa fa-check"></i>Treino direto no aplicativo</li>
-                            <li><i class="fa fa-check"></i>Avaliação e Medidas</li>
-                            <li><i class="fa fa-check"></i>Objetivos até a próxima avaliação</li>
-                            <li><i class="fa fa-check"></i>Página personalizada para o Personal, com uma mensagem de
-                                boas vindas, formas de contato e rede social</li>
-                            <li id="btn-video-app" class="btn-border"><i class="fa fa-video"></i>Veja Como</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="garantia-container">
+          <p class="text-black">Precisa de mais?</p>
+          <a
+            href="https://api.whatsapp.com/send?phone=5598991354878&text=Preciso de um plano especial"
+            class="cta linear contato"
+            >Fale com nossa equipe</a
+          >
+        </div>
+      </div>
 
-            <div class="garantia-container">
-                <p class="text-black">Precisa de mais?</p>
-                <a href="https://api.whatsapp.com/send?phone=5598991354878&text=Preciso de um plano especial"
-                    class="cta linear contato">Fale
-                    com nossa equipe</a>
-            </div>
+      <div id="duvidas" class="div-content" style="background: #fafbfc">
+        <div class="intro-container">
+          <h1>Tire suas dúvidas</h1>
         </div>
 
-        <div id="duvidas" class="div-content" style="background: #fafbfc">
-            <div class="intro-container">
-                <h1>Tire suas dúvidas</h1>
+        <div class="cards-container">
+          <div class="col-container">
+            <div class="card">
+              <div class="card-content">
+                <h2 class="title-bold">
+                  Posso copiar uma treino que já utilizei para outro cliente?
+                </h2>
+                <p class="light-text">
+                  Sim! Você pode facilmente copiar uma ficha que já tem
+                  cadastrada no sistema.
+                </p>
+                <p class="light-text">
+                  Você pode copiar os treinos, periodização ou apenas as partes
+                  que desejar.
+                </p>
+              </div>
             </div>
 
-            <div class="cards-container">
-                <div class="col-container">
-                    <div class="card">
-                        <div class="card-content">
-                            <h2 class="title-bold">Posso copiar uma treino que já utilizei para outro cliente?</h2>
-                            <p class="light-text">Sim! Você pode facilmente copiar uma ficha que já tem cadastrada no
-                                sistema.</p>
-                            <p class="light-text">Você pode copiar os treinos, periodização ou apenas as partes que
-                                desejar.</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-content">
-                            <h2 class="title-bold">Quantos alunos posso ter?</h2>
-                            <p class="light-text">Todos os nossos planos dão direito a 100 alunos.</p>
-                            <p class="light-text">Caso você precise de uma quantidade maior, você pode solicitar um
-                                plano diferenciado a nossa equipe. Para isso é só usar o botão abaixo :)</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-content">
-                            <h2 class="title-bold">Posso usar o sistema pelo meu smartphone?</h2>
-                            <p class="light-text">Você pode visualizar as informações dos clientes e fazer avaliações
-                                pelo seu smartphone.</p>
-                            <p class="light-text"> Para isso, você pode acessar o sistema pelo browser do seu celular.
-                                A prescrição de treinos estará disponível em breve!</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-container">
-                    <div class="card">
-                        <div class="card-content">
-                            <h2 class="title-bold">Como funcionam os treinos prontos?</h2>
-                            <p class="light-text">
-                                Nosso Personal trainer chefe, Thiago Leite, elaborou planejamentos para 3 tipos de
-                                alunos:
-                                iniciantes, intermediários e avançados.
-                            </p>
-                            <p class="light-text">
-                                Os treinos seguem uma periodização testada e aprovada com centenas de alunos. Você pode
-                                aplicar os treinos que propomos sem alteração, ou modifica-los como quiser. Você
-                                decide!
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <h2 class="title-bold">Não encontrei o exercício que queria, e agora?</h2>
-                            <p class="light-text">Você pode solicitar o exercício que deseja usar e nós iremos
-                                direcionar nossa equipe de
-                                fotográfos para preparar tudo para cadastrarmos no sistema.
-                            </p>
-                            <p class="light-text">
-                                Normalmente esperamos formar uma lista de solicitações e adicionamos todos os
-                                exercícios de uma só vez.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-container">
-                    <div class="card">
-                        <div class="card-content">
-                            <h2 class="title-bold">Como funciona a garantia?</h2>
-                            <p class="light-text">Oferecemos uma garantia incondicional de 30 dias. Isso quer dizer,
-                                que após realizar a compra, você pode solicitar o reembolso completo do valor
-                                investido, dentro de 30 dias após a aprovação do pagamento. </p>
-                            <p class="light-text">Simples assim!</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <h2 class="title-bold">Como o cliente recebe o treino e a avaliação?</h2>
-                            <p class="light-text">O treino, a avaliação e os objetios definidos para o cliente vão
-                                direto para o nosso aplicativo.</p>
-                            <p class="light-text">O cliente acessa o App e lá poderá realizar os treinos e ver os dados
-                                da avaliação física.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="card">
+              <div class="card-content">
+                <h2 class="title-bold">Quantos alunos posso ter?</h2>
+                <p class="light-text">
+                  Todos os nossos planos dão direito a 100 alunos.
+                </p>
+                <p class="light-text">
+                  Caso você precise de uma quantidade maior, você pode solicitar
+                  um plano diferenciado a nossa equipe. Para isso é só usar o
+                  botão abaixo :)
+                </p>
+              </div>
             </div>
 
-            <div class="garantia-container">
-                <p class="text-black">Vamos conversar 😉</p>
-                <p class="light-text" style="text-align: center">Se você ainda tem alguma dúvida, ficaremos felizes em
-                    falar com você!</p>
-                <a href="https://api.whatsapp.com/send?phone=5598991354878&text=Me ajuda"
-                    class="cta linear contato">Entrar
-                    em contato</a>
+            <div class="card">
+              <div class="card-content">
+                <h2 class="title-bold">
+                  Posso usar o sistema pelo meu smartphone?
+                </h2>
+                <p class="light-text">
+                  Você pode visualizar as informações dos clientes e fazer
+                  avaliações pelo seu smartphone.
+                </p>
+                <p class="light-text">
+                  Para isso, você pode acessar o sistema pelo browser do seu
+                  celular. A prescrição de treinos estará disponível em breve!
+                </p>
+              </div>
             </div>
+          </div>
+
+          <div class="col-container">
+            <div class="card">
+              <div class="card-content">
+                <h2 class="title-bold">Como funcionam os treinos prontos?</h2>
+                <p class="light-text">
+                  Nosso Personal trainer chefe, Thiago Leite, elaborou
+                  planejamentos para 3 tipos de alunos: iniciantes,
+                  intermediários e avançados.
+                </p>
+                <p class="light-text">
+                  Os treinos seguem uma periodização testada e aprovada com
+                  centenas de alunos. Você pode aplicar os treinos que propomos
+                  sem alteração, ou modifica-los como quiser. Você decide!
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h2 class="title-bold">
+                  Não encontrei o exercício que queria, e agora?
+                </h2>
+                <p class="light-text">
+                  Você pode solicitar o exercício que deseja usar e nós iremos
+                  direcionar nossa equipe de fotográfos para preparar tudo para
+                  cadastrarmos no sistema.
+                </p>
+                <p class="light-text">
+                  Normalmente esperamos formar uma lista de solicitações e
+                  adicionamos todos os exercícios de uma só vez.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-container">
+            <div class="card">
+              <div class="card-content">
+                <h2 class="title-bold">Como funciona a garantia?</h2>
+                <p class="light-text">
+                  Oferecemos uma garantia incondicional de 30 dias. Isso quer
+                  dizer, que após realizar a compra, você pode solicitar o
+                  reembolso completo do valor investido, dentro de 30 dias após
+                  a aprovação do pagamento.
+                </p>
+                <p class="light-text">Simples assim!</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h2 class="title-bold">
+                  Como o cliente recebe o treino e a avaliação?
+                </h2>
+                <p class="light-text">
+                  O treino, a avaliação e os objetios definidos para o cliente
+                  vão direto para o nosso aplicativo.
+                </p>
+                <p class="light-text">
+                  O cliente acessa o App e lá poderá realizar os treinos e ver
+                  os dados da avaliação física.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="garantia-container">
+          <p class="text-black">Vamos conversar 😉</p>
+          <p class="light-text" style="text-align: center">
+            Se você ainda tem alguma dúvida, ficaremos felizes em falar com
+            você!
+          </p>
+          <a
+            href="https://api.whatsapp.com/send?phone=5598991354878&text=Me ajuda"
+            class="cta linear contato"
+            >Entrar em contato</a
+          >
+        </div>
+      </div>
     </div>
     <footer>
-        <div class="col">
-            <ul>
-                <li>
-                    <a href="https://fitmentor.com.br">Home</a>
-                </li>
+      <div class="col">
+        <ul>
+          <li>
+            <a href="https://fitmentor.com.br">Home</a>
+          </li>
 
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=5598991354878&text=Me ajuda">Suporte</a>
-                </li>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send?phone=5598991354878&text=Me ajuda"
+              >Suporte</a
+            >
+          </li>
 
-                <li>
-                    <a href="#planos">Planos</a>
-                </li>
-                <li>
-                    <a href="#incluso">Incluso nos planos</a>
-                </li>
-                <li>
-                    <a href="#duvidas">Dúvidas</a>
-                </li>
-            </ul>
-        </div>
+          <li>
+            <a href="#planos">Planos</a>
+          </li>
+          <li>
+            <a href="#incluso">Incluso nos planos</a>
+          </li>
+          <li>
+            <a href="#duvidas">Dúvidas</a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="col">
-            <ul>
-                <li>
-                    <a href="https://app.fitmentor.com.br/term">Política de Privacidade</a>
-                </li>
-            </ul>
-        </div>
+      <div class="col">
+        <ul>
+          <li>
+            <a href="https://app.fitmentor.com.br/term"
+              >Política de Privacidade</a
+            >
+          </li>
+        </ul>
+      </div>
     </footer>
 
-    <div id="modal-video"
-        style="display:none; text-align: center; position: fixed; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.7);">
-        <video id="videoApp" width="228" height="556" controls muted>
-            <source src="static/app480p.mp4" type="video/mp4">
-        </video>
-        <i id="close-modal-video" class="fa fa-2x fa-times"
-            style="position: fixed; color: #fff; right: 15px; top: 15px;"></i>
+    <div
+      id="modal-video"
+      style="display:none; text-align: center; position: fixed; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.7);"
+    >
+      <video id="videoApp" width="228" height="556" controls muted>
+        <source src="static/app480p.mp4" type="video/mp4" />
+      </video>
+      <i
+        id="close-modal-video"
+        class="fa fa-2x fa-times"
+        style="position: fixed; color: #fff; right: 15px; top: 15px;"
+      ></i>
     </div>
     <script>
-        var btnApp = document.getElementById("btn-video-app");
-        var modalVideo = document.getElementById("modal-video");
-        var closeModalVideo = document.getElementById("close-modal-video");
-        var videoApp = document.getElementById("videoApp");
-        var criarTreino = document.getElementById("criarTreino")
+      var btnApp = document.getElementById("btn-video-app");
+      var modalVideo = document.getElementById("modal-video");
+      var closeModalVideo = document.getElementById("close-modal-video");
+      var videoApp = document.getElementById("videoApp");
+      var criarTreino = document.getElementById("criarTreino");
 
-        btnApp.addEventListener('click', () => {
-            modalVideo.style.display = "block";
-            videoApp.play();
-        });
+      btnApp.addEventListener("click", () => {
+        modalVideo.style.display = "block";
+        videoApp.play();
+      });
 
-        closeModalVideo.addEventListener('click', () => {
-            modalVideo.style.display = 'none';
-        });
+      closeModalVideo.addEventListener("click", () => {
+        modalVideo.style.display = "none";
+      });
 
-        const showVideo = () => {
-            modalVideo.style.display = "block";
-            videoApp.play();
-        }
+      const showVideo = () => {
+        modalVideo.style.display = "block";
+        videoApp.play();
+      };
 
-        const showTab = (tabName, clicked) => {
-            const activeClass = 'active';
-            const tabToShow = document.getElementById(tabName);
-            const tabClicked = clicked.parentElement;
-            const activeTab = document.getElementsByClassName('tab active')[0];
-            const activeTabContent = document.getElementsByClassName('tab-content active')[0]; // there can only be one!
+      const showTab = (tabName, clicked) => {
+        const activeClass = "active";
+        const tabToShow = document.getElementById(tabName);
+        const tabClicked = clicked.parentElement;
+        const activeTab = document.getElementsByClassName("tab active")[0];
+        const activeTabContent = document.getElementsByClassName(
+          "tab-content active"
+        )[0]; // there can only be one!
 
-            activeTab.classList.remove(activeClass);
-            tabClicked.classList.add(activeClass);
-            activeTabContent.classList.remove(activeClass);
-            tabToShow.classList.add(activeClass);
-        }
+        activeTab.classList.remove(activeClass);
+        tabClicked.classList.add(activeClass);
+        activeTabContent.classList.remove(activeClass);
+        tabToShow.classList.add(activeClass);
+      };
 
-        // criarTreino.addEventListener("fullscreenchange", function () {
-        //     screen.orientation.lock("landscape-primary");
-        // });
+      // criarTreino.addEventListener("fullscreenchange", function () {
+      //     screen.orientation.lock("landscape-primary");
+      // });
     </script>
-</body>
-
+  </body>
 </html>
